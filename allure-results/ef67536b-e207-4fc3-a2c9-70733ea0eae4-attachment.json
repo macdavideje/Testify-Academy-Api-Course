@@ -1,0 +1,20 @@
+{
+    "Date": "Tue, 25 Feb 2025 15:04:55 GMT",
+    "Content-Type": "application/json",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "CF-Ray": "917897309f5103e2-LIS",
+    "CF-Cache-Status": "DYNAMIC",
+    "Cache-Control": "no-cache",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "access-control-expose-headers": "X-RateLimit-Remaining, X-RateLimit-Limit, X-RateLimit-Reset",
+    "badi": "Routing: lon-2=>lon-2; Version: 12a7; Host: 7db6d9f7c-pbnvc;",
+    "x-401-by-gw": "true",
+    "x-content-type-options": "nosniff",
+    "x-correlation-id": "7055060e-03a3-4f39-84fc-b11014b224b4",
+    "x-xss-protection": "1; mode=block",
+    "Set-Cookie": "__cf_bm=zFcAR8EbDNlXlJhWfQD4e7HeW0FPXoOoGChz._1NPwM-1740495895-1.0.1.1-7dPlZGmrGDpdV.yT6kTqOmz9T6oEaQSl92COK7bzH3oKYICMe3K5et7WAqf9DUkBMSKr_xh10tfdNW8RZFuqbg; path=/; expires=Tue, 25-Feb-25 15:34:55 GMT; domain=.pipedrive.com; HttpOnly; Secure; SameSite=None",
+    "Vary": "Accept-Encoding",
+    "Server": "cloudflare",
+    "alt-svc": "h3=\":443\"; ma=86400"
+}

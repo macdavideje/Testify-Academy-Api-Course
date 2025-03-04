@@ -1,0 +1,4 @@
+{
+  "content": "This customer is a real fan of our service and product. They contacted us directly to get a proposal to start negotiations because they trust us"
+
+}
