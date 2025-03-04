@@ -1,0 +1,12 @@
+{
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "42670b48-0f17-4027-855f-69488fdb0234",
+    "Host": "api.pipedrive.com",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Content-Length": "374",
+    "Cookie": "__cf_bm=zFcAR8EbDNlXlJhWfQD4e7HeW0FPXoOoGChz._1NPwM-1740495895-1.0.1.1-7dPlZGmrGDpdV.yT6kTqOmz9T6oEaQSl92COK7bzH3oKYICMe3K5et7WAqf9DUkBMSKr_xh10tfdNW8RZFuqbg"
+}

@@ -1,0 +1,13 @@
+{
+  "content": "This customer is a real fan of our service and product. They contacted us directly to get a proposal to start negotiations.",
+  "lead_id": null,
+  "deal_id": 7,
+  "person_id": 7,
+  "org_id": null,
+  "user_id": 23136235,
+  "add_time": "2025-02-13 13:28:06",
+  "pinned_to_lead_flag": false,
+  "pinned_to_deal_flag": false,
+  "pinned_to_organization_flag": false,
+  "pinned_to_person_flag": false
+}

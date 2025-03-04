@@ -1,0 +1,27 @@
+{
+    pm.test("Set collection variable for update_time", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("update_time", jsonData.data.update_time);
+    pm.expect(jsonData.data.add_time).to.be.equal("2025-02-18T13:50:33.101Z");
+});
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("Status code is 204", function () {
+    pm.response.to.have.status(204);
+});
+
+pm.test("Set collection variable for object_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("object_id", jsonData.data.object_id);
+    pm.expect(jsonData.data.object_id).to.be.a("number");
+});
+
+pm.test("Set collection variable for updater_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("updater_id", jsonData.data.updater_id);
+    pm.expect(jsonData.data.updater_id).to.be.null;
+});
+}

@@ -1,0 +1,172 @@
+{
+
+    pm.test("Verify that Status code is 200", function () {
+        pm.response.to.have.status(200);
+    });
+    }
+    pm.test("Response time is less than 200ms", function () {
+        pm.expect(pm.response.responseTime).to.be.below(1000);
+    });
+// test for id 1 (Get one note)
+
+pm.test("Verify that value note is 100", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.value).to.eql(100);
+});
+ pm.test("Set collection variable for id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("id", jsonData.data.success);
+    pm.expect(jsonData.data.success).to.be.true;
+});pm.test("Set collection variable for id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("id", jsonData.data.id);
+    pm.expect(jsonData.data.id).to.a("Number");
+});
+;
+pm.test("Set collection variable for person_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("person_id", jsonData.data.person_id);
+    pm.expect(jsonData.data.person_id).to.a("Number");
+});
+pm.test("Set collection variable for id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("note_id", jsonData.data.id);
+    pm.expect(jsonData.data.id).to.be.a('number');
+});
+
+pm.test("Set collection variable for comment_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("comment_id", jsonData.data.uuid);
+    pm.expect(jsonData.data.id).to.be.a('number');
+});
+pm.test("Verify that Status code is 201", function () {
+});
+pm.test("Verify that person name is '[Sample] Kanushi Barnes'", function () {
+    var responseData = pm.response.json();
+pm.collectionVariables.set("person_name", responseData.data.person.name);
+   pm.expect(responseData.data.person.name).to.eql("[Sample] Kanushi Barnes");
+});
+pm.test("Verify that Status code is 201", function () {
+});
+pm.test("Verify that Status code is 401", function () {
+});
+pm.test("Verify that person name is '[Sample] Kanushi Barnes'", function () {
+    var responseData = pm.response.json();
+pm.collectionVariables.set("person_name", responseData.data.person.name);
+   pm.expect(responseData.data.person.name).to.eql("[Sample] otto Miller");
+});
+ var responseData = pm.response.json();
+pm.test("Set collection variable for null", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("note_org_id", jsonData.data.id);
+    pm.expect(jsonData.data.org_id).to.be.null;
+});
+// Comment verifying time for the test
+pm.test("Verify that response time is less than 200ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(1000);
+});
+// Test for an incurate time
+pm.test("Verify that response time is more than 200ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(800);
+});
+pm.test("Set collection variable for lead_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("lead_id", jsonData.data.uuid);
+    pm.expect(jsonData.data.lead_id).to.be.null;
+});
+
+pm.test("Set collection variable for project_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("project_id", jsonData.data.uuid);
+    pm.expect(jsonData.data.project_id).to.be.null;
+});
+pm.test("Set collection variable for deal_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("deal_id", jsonData.data.uuid);
+    pm.expect(jsonData.data.deal_id).to.be.a('number');
+});
+pm.test("Set collection variable for person_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("person_id", jsonData.data.uuid);
+    pm.expect(jsonData.data.person_id).to.be.a('number');
+});
+pm.test("Set collection variable for pinned_to_deal_flag", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("pinned_to_deal_flag", jsonData.data.uuid);
+    pm.expect(jsonData.data.pinned_to_deal_flag).to.be.false;
+});
+pm.test("Set collection variable for pinned_to_person_flag", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("pinned_to_person_flag", jsonData.data.uuid);
+    pm.expect(jsonData.data.pinned_to_person_flag).to.be.false;
+});
+pm.test("Set collection variable for pinned_to_organization_flag", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("pinned_to_organization_flag", jsonData.data.uuid);
+    pm.expect(jsonData.data.pinned_to_organization_flag).to.be.false;
+});
+pm.test("Set collection variable for pinned_to_project_flag", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("pinned_to_project_flag", jsonData.data.uuid);
+    pm.expect(jsonData.data.pinned_to_project_flag).to.be.false;
+});
+pm.test("Set collection variable for pinned_to_project_flag", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("pinned_to_project_flag", jsonData.data.pinned_to_project_flag);
+    pm.expect(jsonData.data.pinned_to_project_flag).to.be.false;
+});
+pm.test("Set collection variable for last_update_user_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("last_update_user_id", jsonData.data.last_update_user_id);
+    pm.expect(jsonData.data.last_update_user_id).to.be.null;
+});
+pm.test("Set collection variable for last_update_user_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("last_update_user_id", jsonData.data.last_update_user_id);
+    pm.expect(jsonData.data.last_update_user_id).to.be.false;
+});
+pm.test("Set collection variable for organization", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("organization", jsonData.data.organization);
+    pm.expect(jsonData.data.organization).to.be.null;
+});
+pm.test("Set collection variable for lead", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("lead", jsonData.data.lead);
+    pm.expect(jsonData.data.lead).to.be.null;
+});
+pm.test("Set collection variable for user email", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("user", jsonData.data.email);
+    pm.expect(jsonData.data.user.email).to.equal("macdavideje@gmail.com");
+});
+pm.test("Set collection variable for user icon_url", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("user", jsonData.data.icon_url);
+    pm.expect(jsonData.data.user.icon_url).to.be.null;
+});
+pm.test("Set collection variable for user name", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("user", jsonData.data.name);
+    pm.expect(jsonData.data.user.name).to.equal("MacDavid Eje");
+});
+pm.test("Set collection variable for user is_you", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("user", jsonData.data.is_you);
+    pm.expect(jsonData.data.user.is_you).to.be.true;
+});
+pm.test("Set collection variable for add_time", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("add_time", jsonData.data.add_time);
+    pm.expect(jsonData.data.add_time).to.be.equal("2025-02-13 13:28:06");
+});
+pm.test("Set collection variable for update_time", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("update_time", jsonData.data.update_time);
+    pm.expect(jsonData.data.add_time).to.be.equal("2025-02-13 13:28:06");
+});
+pm.test("Set collection variable for title", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("title", jsonData.data.title);
+    pm.expect(jsonData.data.title).to.be.equal("[sample]Sorock");
+});

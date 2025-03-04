@@ -1,0 +1,36 @@
+pm.test("Verify that Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+pm.test("Verify that success message is true", function () {
+    var notes = pm.response.json();
+    pm.expect(notes.success).to.eql(true);
+});
+pm.test("Verify that ID is 1", function () {
+    let jsonData = pm.response.json();
+       pm.expect(jsonData).to.have.property("id");
+       pm.expect(jsonData.id).to.be.a("Number");
+});
+pm.test("Set collection variable for id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("note_id", jsonData.data.id);
+    pm.expect(jsonData.data.id).to.be.a('number');
+});
+
+pm.test("Set collection variable for comment_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("comment_id", jsonData.data.uuid);
+    pm.expect(jsonData.data.id).to.be.a('number');
+});
+pm.test("Set collection variable for comment_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("comment_id", jsonData.data.uuid);
+    pm.expect(jsonData.data.id).to.be.a('number');
+});
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+pm.test("Set collection variable for deal_id", function () {
+    let jsonData = pm.response.json();
+    pm.collectionVariables.set("deal_id", jsonData.data.deal_id);
+    pm.expect(jsonData.data.deal_id).to.be.a("Number");
+});
